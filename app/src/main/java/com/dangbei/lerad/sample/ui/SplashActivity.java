@@ -20,5 +20,4 @@ public class SplashActivity extends AppCompatActivity {
         Log.d("yl", getClass().getName() + "-----------------------" + "init");
     }
 
-
 }
