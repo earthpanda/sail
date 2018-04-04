@@ -5,6 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.0-beta1'
@@ -19,6 +20,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
 
 
@@ -27,15 +29,13 @@ allprojects {
         global_targetVersion = 14
         global_minSdkVersion = 14
         global_supportVersion = '26.1.0'
-
+        global_gonzalez = 'v1.0'
         //test
         global_junitVersion = '4.12'
         global_runnerVersion = '1.0.1'
         global_espressoVersion = '3.0.1'
 
-
     }
-
 
 }
 

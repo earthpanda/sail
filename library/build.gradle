@@ -27,6 +27,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation "com.github.earthpanda:gonzalez:$global_gonzalez"
     implementation "com.android.support:appcompat-v7:$global_supportVersion"
     testImplementation "junit:junit:$global_junitVersion"
     androidTestImplementation "com.android.support.test:runner:$global_runnerVersion"
