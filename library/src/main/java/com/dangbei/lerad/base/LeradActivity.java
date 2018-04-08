@@ -54,7 +54,7 @@ public abstract class LeradActivity extends AppCompatActivity implements Viewer 
     }
 
     @Override
-    public final void onViewDestroyed() {
+    public final void onViewerDestroyed() {
         //ignore
         //there is nothing to do here
     }

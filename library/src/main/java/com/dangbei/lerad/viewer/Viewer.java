@@ -9,7 +9,7 @@ import com.dangbei.lerad.presenter.LeradRxPresenterDelegate;
  */
 public interface Viewer {
 
-    void onViewDestroyed();
+    void onViewerDestroyed();
 
     LeradRxPresenterDelegate getLeradDelegate();
 
