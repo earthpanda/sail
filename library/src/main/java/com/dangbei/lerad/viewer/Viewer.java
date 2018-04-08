@@ -1,6 +1,6 @@
 package com.dangbei.lerad.viewer;
 
-import com.dangbei.lerad.presenter.LeradPresenterDelegate;
+import com.dangbei.lerad.presenter.LeradRxPresenterDelegate;
 
 /**
  * 因为presenter总是在delegate后进行bind，因而对于presenter来说，它拿不到onCreate的回调，因而我们只需要关心onDestroyed的
@@ -11,6 +11,6 @@ public interface Viewer {
 
     void onViewDestroyed();
 
-    LeradPresenterDelegate getLeradDelegate();
+    LeradRxPresenterDelegate getLeradDelegate();
 
 }

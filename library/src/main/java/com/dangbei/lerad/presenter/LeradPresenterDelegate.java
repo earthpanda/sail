@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 一个viewer可能会有多个presenter
  * Created by yl on 2018/4/4.
  */
 public class LeradPresenterDelegate implements Presenter {
 
-    private List<LeradPresenter> presenterList;
+    protected List<LeradPresenter> presenterList;
 
 
     public void add(LeradPresenter presenter) {

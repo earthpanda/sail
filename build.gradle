@@ -30,6 +30,9 @@ allprojects {
         global_minSdkVersion = 14
         global_supportVersion = '26.1.0'
         global_gonzalez = 'v1.0'
+        global_rxjava = '2.1.9'
+        global_rxAndroid = '2.0.2'
+
         //test
         global_junitVersion = '4.12'
         global_runnerVersion = '1.0.1'

@@ -3,16 +3,19 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion global_compileVersion
 
-
-
     defaultConfig {
         minSdkVersion global_minSdkVersion
         targetSdkVersion global_targetVersion
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+    }
+
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 
     buildTypes {
@@ -22,10 +25,23 @@ android {
         }
     }
 
+
+
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //rxjava
+    implementation "io.reactivex.rxjava2:rxandroid:$global_rxAndroid"
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+// (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
+    implementation "io.reactivex.rxjava2:rxjava:$global_rxjava"
+
+
+
 
     implementation "com.github.earthpanda:gonzalez:$global_gonzalez"
     implementation "com.android.support:appcompat-v7:$global_supportVersion"

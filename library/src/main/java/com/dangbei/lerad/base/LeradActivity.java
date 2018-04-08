@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.dangbei.lerad.presenter.LeradPresenterDelegate;
+import com.dangbei.lerad.presenter.LeradRxPresenterDelegate;
 import com.dangbei.lerad.viewer.Viewer;
 
 /**
@@ -13,13 +13,13 @@ import com.dangbei.lerad.viewer.Viewer;
  */
 public abstract class LeradActivity extends AppCompatActivity implements Viewer {
 
-    private LeradPresenterDelegate delegate;
+    private LeradRxPresenterDelegate delegate;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        delegate = new LeradPresenterDelegate();
+        delegate = new LeradRxPresenterDelegate();
     }
 
     @Override
@@ -49,7 +49,7 @@ public abstract class LeradActivity extends AppCompatActivity implements Viewer 
     }
 
     @Override
-    public LeradPresenterDelegate getLeradDelegate() {
+    public LeradRxPresenterDelegate getLeradDelegate() {
         return delegate;
     }
 

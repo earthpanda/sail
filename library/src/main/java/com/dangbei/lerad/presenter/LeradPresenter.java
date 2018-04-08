@@ -5,7 +5,7 @@ import com.dangbei.lerad.viewer.Viewer;
 import java.lang.ref.WeakReference;
 
 /**
- * 这里用RxBus进行资源的销毁处理
+ * 这里用RxJava进行资源的销毁处理
  * 基类的presenter 类
  * Created by yl on 2018/4/4.
  */
@@ -15,24 +15,22 @@ public abstract class LeradPresenter<T extends Viewer> implements Presenter {
 
     @Override
     public void bind(Viewer viewer) {
-
         LeradPresenterDelegate delegate = viewer.getLeradDelegate();
         if (null == delegate) {
             throw new RuntimeException("the leradPresenterDelegate is null");
         } else {
             this.viewer = (WeakReference<T>) new WeakReference<>(viewer);
-            delegate.add(this);
         }
     }
 
     @Override
     public void onViewCreated() {
-
+        //ignore
     }
 
     @Override
     public void onViewDestroyed() {
-
+        //ignore
     }
 
 }
