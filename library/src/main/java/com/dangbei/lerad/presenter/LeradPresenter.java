@@ -5,6 +5,7 @@ import com.dangbei.lerad.viewer.Viewer;
 import java.lang.ref.WeakReference;
 
 /**
+ * 这里用RxBus进行资源的销毁处理
  * 基类的presenter 类
  * Created by yl on 2018/4/4.
  */
