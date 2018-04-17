@@ -20,6 +20,7 @@ public abstract class LeradPresenter<T extends Viewer> implements Presenter {
             throw new RuntimeException("the leradPresenterDelegate is null");
         } else {
             this.viewer = (WeakReference<T>) new WeakReference<>(viewer);
+            delegate.add(this);
         }
     }
 

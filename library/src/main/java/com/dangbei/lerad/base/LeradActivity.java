@@ -13,6 +13,7 @@ import com.dangbei.lerad.viewer.Viewer;
  */
 public abstract class LeradActivity extends AppCompatActivity implements Viewer {
 
+
     private LeradRxPresenterDelegate delegate;
 
 

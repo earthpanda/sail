@@ -40,7 +40,14 @@ dependencies {
 // (see https://github.com/ReactiveX/RxJava/releases for latest 2.x.x version)
     implementation "io.reactivex.rxjava2:rxjava:$global_rxjava"
 
+    //dagger2
+    implementation "com.google.dagger:dagger:$global_dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$global_dagger2Version"
 
+    //dagger2-android
+    implementation "com.google.dagger:dagger-android:$global_dagger2Version"
+    implementation "com.google.dagger:dagger-android-support:$global_dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-android-processor:$global_dagger2Version"
 
 
     implementation "com.github.earthpanda:gonzalez:$global_gonzalez"
